@@ -1,6 +1,16 @@
-<center> <h1>HBNB - The Console</h1> </center>
+ <center> <h1>HBnB clone - MySQL</h1> </center>
 
-This repository contains the initial stage of a student project to build a clone of the AirBnB website. This stage implements a backend interface, or console, to manage program data. Console commands allow the user to create, update, and destroy objects, as well as manage file storage. Using a system of JSON serialization/deserialization, storage is persistent between sessions.
+This repository is a part of the AirBnB Clone, and it aims to provide a basic understanding of how to create,
+implement and use storage engines for web applications. The HBNB storage
+project is a Python-based web application that provides a database management
+system for storing, retrieving and managing data.
+
+The HBNB Storage system uses environment variables to determine the type of
+storage, MySQL database configuration, and the running environment. There
+are two types of storage available: File storage and Database storage.
+File storage uses the FileStorage engine while the Database storage uses
+the DBStorage engine. The user can specify the type of storage used by
+setting the HBNB_TYPE_STORAGE environment variable to either "file" or "db".
 
 ---
 
