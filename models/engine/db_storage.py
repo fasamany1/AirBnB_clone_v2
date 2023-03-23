@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This database storage engine use SQLAlchemy with a mysql+mysqldb database
+"""Database storage engine using SQLAlchemy with a mysql+mysqldb database
 connection.
 """
 
