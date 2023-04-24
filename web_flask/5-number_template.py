@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is a simple Flask web application that displays "Hello HBNB!", "HBNB", "C <text>",
+"""Display "Hello HBNB!", "HBNB", "C <text>",
 "Python <text>" with default value of "is cool", and "n is a number".
 """
 from flask import Flask, render_template
@@ -20,7 +20,7 @@ def hbnb():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c_text(text):
-    """This function returns "C <text>" when the '/c/<text>' URL is requested,
+    """Returns "C <text>" when the '/c/<text>' URL is requested,
     with any underscores in the <text> variable replaced with spaces.
     """
     return "C {}".format(text.replace("_", " "))
