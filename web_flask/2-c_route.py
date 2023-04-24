@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" A simple Flask web application that displays "Hello HBNB!", "HBNB", and "C <text>".
+"""Display "Hello HBNB!", "HBNB", and "C <text>".
 Web application listen on 0.0.0.0, port 5000
 """
 
