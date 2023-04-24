@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" A simple Flask web application that displays "Hello HBNB!", "HBNB", "C <text>",
-"Python <text>" with default value of "is cool", and "n is a number".
+""" Display "Hello HBNB!", "HBNB", "C <text>","Python <text>"
+with default value of "is cool", and "n is a number".
 Web application listen on 0.0.0.0, port 5000
 """
 
