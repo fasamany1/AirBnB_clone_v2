@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" Display "Hello HBNB!", "HBNB", "C <text>","Python <text>"
-with default value of "is cool", and "n is a number".
+""" Display "Hello HBNB!", "HBNB", "C <text>","Python <text>".
 Web application listen on 0.0.0.0, port 5000
 """
 
@@ -32,8 +31,7 @@ def c_text(text):
 @app.route('/python', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python_text(text="is cool"):
-    """This function returns "Python <text>" when the '/python/<text>' URL is requested,
-    with any underscores in the <text> variable replaced with spaces.
+    """Returns "Python <text>" when the '/python/<text>' URL is requested.
     If no <text> variable is provided, the default value "is cool" is used.
     """
     return "Python {}".format(escape(text.replace("_", " ")))
