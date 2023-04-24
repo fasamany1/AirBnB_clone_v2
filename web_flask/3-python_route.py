@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-""" simple Flask web application that displays "Hello HBNB!", "HBNB", "C <text>",
-and "Python <text>" with default value of "is cool".
+""" Displays "Hello HBNB!", "HBNB", "C <text>", and "Python <text>".
 Web application listen on 0.0.0.0, port 5000
 """
 
@@ -32,8 +31,7 @@ with any underscores in the <text> variable replaced with spaces.
 @app.route('/python', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route("/python/<text>", strict_slashes=False)
 def python_text(text="is cool"):
-    """This function returns "Python <text>" when the '/python/<text>' URL is requested,
-    with any underscores in the <text> variable replaced with spaces.
+    """Return "Python <text>" when the '/python/<text>' URL is requested.
     If no <text> variable is provided, the default value "is cool" is used.
     """
     return "Python {}".format(escape(text.replace("_", " ")))
